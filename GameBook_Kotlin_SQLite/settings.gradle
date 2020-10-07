@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "GameBook_Kotlin_SQLite"

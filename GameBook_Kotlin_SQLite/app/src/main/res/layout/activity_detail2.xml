@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity2">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="290dp"
+        android:layout_height="225dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="selectImage"
+        app:layout_constraintBottom_toTopOf="@+id/editTextGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/selectedimage" />
+
+    <EditText
+        android:id="@+id/editTextGame"
+        android:layout_width="315dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="Game"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextReleaseDate"
+        app:layout_constraintEnd_toEndOf="@+id/editTextReleaseDate"
+        app:layout_constraintStart_toStartOf="@+id/editTextReleaseDate"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="75dp"
+        android:onClick="saveData"
+        android:text="SAVE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDeveloper" />
+
+    <EditText
+        android:id="@+id/editTextReleaseDate"
+        android:layout_width="315dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="Release Date"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDeveloper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGame" />
+
+    <EditText
+        android:id="@+id/editTextDeveloper"
+        android:layout_width="315dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="Developer"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextReleaseDate" />
+</androidx.constraintlayout.widget.ConstraintLayout>
